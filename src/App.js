@@ -1,15 +1,13 @@
-import React from "react";
 import {
-  ThemeProvider,
-  CSSReset,
-  Box,
-  Image,
-  Flex,
-  Badge,
-  Text,
   ColorModeProvider,
+  CSSReset,
+  Flex,
+  Text,
+  ThemeProvider,
 } from "@chakra-ui/core";
-import { MdStar } from "react-icons/md";
+import styled from "@emotion/styled";
+import React from "react";
+import { LoginForm } from "./LoginForm/LoginForm";
 import { customTheme } from "./theme";
 import ThemeToggler from "./theme/toggler";
 
@@ -19,7 +17,12 @@ function App() {
       <ColorModeProvider>
         <CSSReset />
         <ThemeToggler />
-        <Text textAlign="center">Create React App Chakra UI</Text>
+        <Flex width="100%" textAlign="center" justify="center">
+          <LoginForm />
+        </Flex>
+        <Text my={5} textAlign="center">
+          Create React App Chakra UI
+        </Text>
       </ColorModeProvider>
     </ThemeProvider>
   );
