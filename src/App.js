@@ -5,7 +5,6 @@ import {
   Text,
   ThemeProvider,
 } from "@chakra-ui/core";
-import styled from "@emotion/styled";
 import React from "react";
 import { LoginForm } from "./LoginForm/LoginForm";
 import { customTheme } from "./theme";
