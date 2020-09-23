@@ -4,11 +4,11 @@ import { useColorMode, Box, IconButton } from "@chakra-ui/core";
 export default function ThemeToggler() {
   const { colorMode, toggleColorMode } = useColorMode();
   return (
-    <Box textAlign="right" py={4} mr={12}>
+    <Box textAlign="right" ml={5}>
       <IconButton
         icon={colorMode === "light" ? "moon" : "sun"}
         onClick={toggleColorMode}
-        variant="ghost"
+        bg="transparent"
       />
     </Box>
   );
